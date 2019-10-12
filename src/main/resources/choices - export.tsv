@@ -4,7 +4,7 @@ id	key	title	text	once	input_text	choices	failure	extinct
 3	phone_contact	Ouvrir mes contacts	- Darling%n%nEntrez un nom de contact :		true	darling=10	9	
 4	phone_call	Appeler un numéro	Entrez un nom de contact ou un numéro de téléphone :		true		9	
 5	bomb_defuse	Désamorcer la bombe	Vous entrez le mot de passe :		true		6	
-6	game_over		La bombe explose.	true			7,8	
+6	game_over		La bombe explose.				7,8	
 7	restart_first	...	Que s'est-il passé ?%nPourquoi je suis encore là !%nLa bombe est toujours là elle aussi et l'horloge indique de nouveau 30 secondes.%nPas le temps de comprendre, il faut que je me dépêche de trouver une solution pour ne pas crever !			2,5		
 8	restart_next	C'est reparti...	Me revoilà face à la bombe... et 30 nouvelles secondes pour trouver une solution.			2,5		
 9	unknow_number		Le numéro que vous essayez de joindre n'est pas attribué.			3,4,17		
@@ -21,4 +21,3 @@ id	key	title	text	once	input_text	choices	failure	extinct
 20	love_talkerror_first		Mon amour, mais qu'est-ce que tu racontes ?			11,12,13,19,22	21	
 21	love_exit		Mince, on m'appelle. Bon je dois raccrocher, bisous mon amour !%n*clac*			3,4,17		10
 22	love_hangout	Raccrocher	Darling, je dois te laisser, bisous.%n*clac*			3,4,17	23	10
-23	exit_game		%nLa bombe explose, déclenchant une réaction en chaîne provoquant une guerre nucléaire totale.%nL'humanité disparaît en quelques années.%n%n					

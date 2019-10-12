@@ -8,8 +8,10 @@ import java.util.Scanner;
 
 public class Main {
 
+    private static int TIMER_MAX = 30;
     private static Scanner input;
     private static List<Choice> choices;
+    private static int timer = TIMER_MAX;
 
     public static void main(String[] args) {
         input = new Scanner(System.in);
@@ -19,6 +21,21 @@ public class Main {
     }
 
     private static void play(Choice choice) {
+        if (choice.getId() != 1 && choice.getId() != 6) {
+            if (timer <= 0) {
+                play(choices.get(5));
+                return;
+            } else if (timer == 1){
+                System.out.printf("%n[%d seconde]", timer);
+            } else {
+                System.out.printf("%n[%d secondes]", timer);
+            }
+            timer--;
+        } else if (choice.getId() != 1) {
+            timer = TIMER_MAX;
+        } else {
+            timer--;
+        }
         if (choice.isDone() && choice.isOnce()) {
             manageFailure(choice);
             return;
