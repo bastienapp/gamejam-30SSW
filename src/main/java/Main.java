@@ -21,7 +21,13 @@ public class Main {
     }
 
     private static void play(Choice choice) {
-        if (choice.getId() != 1 && choice.getId() != 6) {
+        if (choice.isDone() && choice.isOnce()) {
+            manageFailure(choice);
+            return;
+        }
+        if (choice.getId() != 1
+                && choice.getId() != 6
+        ) {
             if (timer <= 0) {
                 play(choices.get(5));
                 return;
@@ -35,10 +41,6 @@ public class Main {
             timer = TIMER_MAX;
         } else {
             timer--;
-        }
-        if (choice.isDone() && choice.isOnce()) {
-            manageFailure(choice);
-            return;
         }
         choice.setDone(true);
         System.out.printf(String.format("%n%s%%n%n", choice.getText()));
