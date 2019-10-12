@@ -1,0 +1,24 @@
+id	key	title	text	once	input_text	choices	failure	extinct
+1	opening		Bordel, comment j'en suis arrivé là...%nIl a fallu que je suive cette piste et que j'ouvre cette mallette nucléaire.%nForcément elle était déjà amorcée,si j'en crois l'horloge, il me reste 30 seconde pour trouver une solution...%nSinon je pars en fumé... Et avec moi, la ville entière.%nJ'imagine que le pays dans lequel je suis n'appréciera pas qu'un étranger ait fait exploser sa capitale.%nÀ mon avis, si je ne désamorce pas cette bombe, c'est une troisième guerre mondiale qui va démarrer.			2,5		
+2	phone_look	Regarder mon téléphone	Il doit bien y avoir quelqu'un qui peut m'aider !			3,4,17		
+3	phone_contact	Ouvrir mes contacts	- Darling%n%nEntrez un nom de contact :		true	darling=10	9	
+4	phone_call	Appeler un numéro	Entrez un nom de contact ou un numéro de téléphone :		true		9	
+5	bomb_defuse	Désamorcer la bombe	Vous entrez le mot de passe :		true		6	
+6	game_over		La bombe explose.	true			7,8	
+7	restart_first	...	Que s'est-il passé ?%nPourquoi je suis encore là !%nLa bombe est toujours là elle aussi et l'horloge indique de nouveau 30 secondes.%nPas le temps de comprendre, il faut que je me dépêche de trouver une solution pour ne pas crever !			2,5		
+8	restart_next	C'est reparti...	Me revoilà face à la bombe... et 30 nouvelles secondes pour trouver une solution.			2,5		
+9	unknow_number		Le numéro que vous essayez de joindre n'est pas attribué.			3,4,17		
+10	love_call		Allo mon amour, pourquoi tu m'appelles ? Tu sais bien que je ne suis pas disponible à cette heure-ci ?	true		11,12,13,19,22	18	
+11	love_howareyou	Comment c'est passé ta journée ?	Tu veux vraiment savoir ça maintenant ? Je pars en réunion dans deux minutes.	true		11,12,13,19,22	21	
+12	love_iloveyou	Je t'aime.	Oui je sais, moi aussi ! Mais c'est pas le moment-là, tu sais bien que cette réunion est importante pour moi.	true		11,12,13,19,22	21	
+13	love_truth1	Je vais mourir...	Qu'est-ce qu'il y a, tu as attrapé un rhume ?	true		14		
+14	love_truth2	Non vraiment, je suis devant une bombe et je ne sais pas comment la désamorcer.	Arrête ce n'est pas drôle !			15,16		
+15	love_thuth3	Darling, je ne rigole pas.	Tu me fais peur là. Mais pourquoi tu m'appelles-moi, personne ne peut t'aider ?					
+16	love_thuth4	Excuse-moi, je voulais juste te parler un peu.	Super, maintenant c'est fait. Bon vite, je dois vraiment partir en réunion là !			11,12,13,19,22	21	
+17	phone_exit	Ranger le téléphone	Vous levez la tête de votre téléphone.%nLa bombe est toujours là...			2,5		
+18	phone_noanswer		Le téléphone sonne, mais personne ne répond.			3,4,17		
+19	love_talk	Dire quelque chose...	Vous lui dites :		true		20	
+20	love_talkerror_first		Mon amour, mais qu'est-ce que tu racontes ?			11,12,13,19,22	21	
+21	love_exit		Mince, on m'appelle. Bon je dois raccrocher, bisous mon amour !%n*clac*			3,4,17		10
+22	love_hangout	Raccrocher	Darling, je dois te laisser, bisous.%n*clac*			3,4,17	23	10
+23	exit_game		%nLa bombe explose, déclenchant une réaction en chaîne provoquant une guerre nucléaire totale.%nL'humanité disparaît en quelques années.%n%n					
