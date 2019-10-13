@@ -2,8 +2,8 @@ id	key	title	text	once	input_text	choices	failure	extinct
 1	opening		Bordel, comment j'en suis arrivé là...%nIl a fallu que je suive cette piste et que j'ouvre cette mallette nucléaire.%nForcément elle était déjà amorcée,si j'en crois l'horloge, il me reste 30 seconde pour trouver une solution...%nSinon je pars en fumé... Et avec moi, la ville entière.%nJ'imagine que le pays dans lequel je suis n'appréciera pas qu'un étranger ait fait exploser sa capitale.%nÀ mon avis, si je ne désamorce pas cette bombe, c'est une troisième guerre mondiale qui va démarrer.			2,5		
 2	phone_look	Regarder mon téléphone	Il doit bien y avoir quelqu'un qui peut m'aider !			3,4,17		
 3	phone_contact	Ouvrir mes contacts	- Camille%n- Darling%n- Kevin%n- Nicolas%n%nEntrez un nom de contact :		true	camille=43,darling=10,kevin=28,nicolas=55	9	
-4	phone_call	Appeler un numéro	Entrez un nom de contact ou un numéro de téléphone :		true	555-365514=99	9	
-5	bomb_defuse	Désamorcer la bombe	Vous entrez le mot de passe :		true		6	
+4	phone_call	Appeler un numéro	Entrez un nom de contact ou un numéro de téléphone :		true	555-365514=72,555-452610=75,555-765344=81	9	
+5	bomb_defuse	Désamorcer la bombe	Vous entrez le mot de passe :		true	6788SEFG=84	6	
 6	game_over		La bombe explose.				7,8	
 7	restart_first	...	Que s'est-il passé ?%nPourquoi je suis encore là !%nLa bombe est toujours là elle aussi et l'horloge indique de nouveau 30 secondes.%nPas le temps de comprendre, il faut que je me dépêche de trouver une solution pour ne pas crever !			2,5		
 8	restart_next	C'est reparti...	Me revoilà face à la bombe... et 30 nouvelles secondes pour trouver une solution.			2,5		
@@ -70,3 +70,16 @@ id	key	title	text	once	input_text	choices	failure	extinct
 69	nicolas_hello	Sur la ministre Michelle.	Il semblerait que la ministre des transport n'aime pas que les rails ferroviaires.%nElle a un problème avec la coke, et a du faire accusser sa propre fille, dénommée Émilie, pour éviter d'aller en prison.	true		63,64,65,66,67,68,69,70		
 70	nicolas_hello	Non rien, désolé.	Pas de soucis.			56,57,58		
 71	nicolas_hello	Merci tu me sauve la vie !	Y'a pas de quoi. Alors le numéro est le 555-436675.			60,61,62,70		
+72	minesweeper_hello		Brigade de déminage bonjour, que puis-je faire pour vous ?	true		73	18	
+73	minesweeper_hello	Je suis en face d'une bombe nucléaire de type XRS-1656, je dois la désamorcer au plus vite.	C'est une bombe de chez nous ça ?! Je ne peux que vous donner le début de la procédure de désamorçage : 6788.%nLe reste du code ne peut être délivré que par le président lui-même !			74		
+74	minesweeper_hello	Merci	Bonne journée.%n*clac*			3,4,17		
+75	minister_hello		Allo ?			76,77		
+76	minister_hello	Dire quelque chose...	Vous lui dites :		true	giselle=79,bdsm=79	78	
+77	minister_hello	Raccrocher	*clac*			3,4,17		74
+78	minister_hello		*clac*					74
+79	minister_hello		Comment vous savez pour Giselle ?%nQue voulez-vous ?			80		
+80	minister_hello	Je veux le numéro du président.	Connard... Son numéro est le 555-765344.%nÀ jamais !%n*clac*			3,4,17		74
+81	president_hello		Ici le président, que désirez-vous ?			82		
+82	president_hello	Bonjour Président, j'ai besoin du numéro de désamorçage de la bombe du nucléaire XRS-1656.	Pas de soucis !%nJe ne connais que la fin du code de désamorçage cependant : SEFG.			83		
+83	president_hello	Merci président, bonne journée !	Pas de quoi Jack Bauer.%n*clac*			3,4,17		81
+84	game_over		Vous entrez le code et désamorcé la bombe.%nBravo, vous avez réussi !					

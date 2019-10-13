@@ -100,7 +100,9 @@ public class Main {
                         }
                     } catch (Exception e) {
                         //e.printStackTrace();
-                        System.out.printf("%nChoix incorrect...%n%n");
+                        if (choice.getId() != 1) {
+                            System.out.printf("%nChoix incorrect...%n%n");
+                        }
                     }
                 } else {
                     manageFailure(choice);
