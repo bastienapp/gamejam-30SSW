@@ -2,7 +2,7 @@ id	key	title	text	once	input_text	choices	failure	extinct
 1	opening		Bordel, comment j'en suis arrivé là...%nIl a fallu que je suive cette piste et que j'ouvre cette mallette nucléaire.%nForcément elle était déjà amorcée,si j'en crois l'horloge, il me reste 30 seconde pour trouver une solution...%nSinon je pars en fumé... Et avec moi, la ville entière.%nJ'imagine que le pays dans lequel je suis n'appréciera pas qu'un étranger ait fait exploser sa capitale.%nÀ mon avis, si je ne désamorce pas cette bombe, c'est une troisième guerre mondiale qui va démarrer.			2,5		
 2	phone_look	Regarder mon téléphone	Il doit bien y avoir quelqu'un qui peut m'aider !			3,4,17		
 3	phone_contact	Ouvrir mes contacts	- Camille%n- Darling%n- Kevin%n- Nicolas%n%nEntrez un nom de contact :		true	camille=43,darling=10,kevin=28,nicolas=55	9	
-4	phone_call	Appeler un numéro	Entrez un nom de contact ou un numéro de téléphone :		true	555-365514=72,555-452610=75,555-765344=81	9	
+4	phone_call	Appeler un numéro	Entrez un nom de contact ou un numéro de téléphone :		true	555-436675=72,555-452610=75,555-765344=81	9	
 5	bomb_defuse	Désamorcer la bombe	Vous entrez le mot de passe :		true	6788SEFG=84	6	
 6	game_over		La bombe explose.				7,8	
 7	restart_first	...	Que s'est-il passé ?%nPourquoi je suis encore là !%nLa bombe est toujours là elle aussi et l'horloge indique de nouveau 30 secondes.%nPas le temps de comprendre, il faut que je me dépêche de trouver une solution pour ne pas crever !			2,5		
