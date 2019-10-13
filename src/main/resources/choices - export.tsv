@@ -1,7 +1,7 @@
 id	key	title	text	once	input_text	choices	failure	extinct
 1	opening		Bordel, comment j'en suis arrivé là...%nIl a fallu que je suive cette piste et que j'ouvre cette mallette nucléaire.%nForcément elle était déjà amorcée,si j'en crois l'horloge, il me reste 30 seconde pour trouver une solution...%nSinon je pars en fumé... Et avec moi, la ville entière.%nJ'imagine que le pays dans lequel je suis n'appréciera pas qu'un étranger ait fait exploser sa capitale.%nÀ mon avis, si je ne désamorce pas cette bombe, c'est une troisième guerre mondiale qui va démarrer.			2,5		
 2	phone_look	Regarder mon téléphone	Il doit bien y avoir quelqu'un qui peut m'aider !			3,4,17		
-3	phone_contact	Ouvrir mes contacts	- Camille%n- Darling%n- Kevin%n- Nicolas%n%nEntrez un nom de contact :		true	camille=43,darling=10,kevin=28,nicolas=99	9	
+3	phone_contact	Ouvrir mes contacts	- Camille%n- Darling%n- Kevin%n- Nicolas%n%nEntrez un nom de contact :		true	camille=43,darling=10,kevin=28,nicolas=55	9	
 4	phone_call	Appeler un numéro	Entrez un nom de contact ou un numéro de téléphone :		true	555-365514=99	9	
 5	bomb_defuse	Désamorcer la bombe	Vous entrez le mot de passe :		true		6	
 6	game_over		La bombe explose.				7,8	
@@ -41,13 +41,32 @@ id	key	title	text	once	input_text	choices	failure	extinct
 40	kevin_whatsup4	Sans déconner !	Oui. Et c'est à ce moment-là que je me suis chié dessus.			41		
 41	kevin_whatsup5	Dégueux !	Je ne te le fais pas dire, j'ai passé 30 minutes à nettoyer, vu que j'avais la chiasse.%nVoilà, à part ça, ça va sinon.			29,30,35,36		
 42	kevin_tacos		Ha oui pas con, on ira en manger un avec Bastien un de ces quatre.	true		29,30,35,36	37	
-43	camille_hello		Si tu m'appelles déjà, ça ne dois pas être bon signe.%nTu en es où de l'enquête ?	true		44,48,52	18	
+43	camille_hello		Si tu m'appelles déjà, ça ne dois pas être bon signe.%nTu en es où de l'enquête ?	true		44,48,52,53	18	
 44	camille_hello	Tu as raison, c'est plus grave que prévu.	À ce point là ?	true		45		
 45	camille_hello	Oui, je suis en face d'une bombe nucléaire amorcée là.	Bordel ! Et c'est moi que tu appelles ?			46		
 46	camille_hello	Oui, tu n'aurais pas d'idée sur comment désamorcer une bombe ?	T'es con, je sais à peine faire mes lacets.%nPourquoi tu crois qu'on ne m'envoie j'avais sur le terrain.%nJe vais chercher le numéro d'un démineur, je te rappelle d'ici 10 minutes.			47		
-47	camille_hello	Dans 10 minutes j'aurai explosé et toute la ville avec, il ne me reste que quelques secondes.	Merde je suis désolé, je ne sais pas quoi faire.			44,48,52		
+47	camille_hello	Dans 10 minutes j'aurai explosé et toute la ville avec, il ne me reste que quelques secondes.	Merde je suis désolé, je ne sais pas quoi faire.			44,48,52,53		
 48	camille_hello	Comment a avancé l'enquête de ton côté ?	J'ai bien avancé mais j'ai une très mauvaise nouvelle...	true		49		
 49	camille_hello	Vas-y, je crois qu'aucune mauvaise nouvelle ne pourra m'attendre maintenant.	La personne que tu aimes le plus est mouillée dans l'affaire.			50		
 50	camille_hello	Quoi, Darling ?!	Oui, tu n'as pas trouvé bizarre qu'un canon comme ça s'intéresse à toi ?%nEn fait Darling travaille à la CIA et enquête sur toi.			51		
-51	camille_hello	Tu as une preuve ?	J'ai mieux : son numéro d'agent : 82AD276.%nTu n'as qu'à lui en parler si tu ne me crois pas.			44,48,52		
-52	camille_hangout	Raccrocher	Merci Camille, je te laisse.%n*clac*			3,4,17		43
+51	camille_hello	Tu as une preuve ?	J'ai mieux : son numéro d'agent : 82AD276.%nTu n'as qu'à lui en parler si tu ne me crois pas.			44,48,52,53		
+52	camille_hello	Dire quelque chose...	Vous lui dites :		true		54	
+53	camille_hello	Raccrocher	Merci Camille, je te laisse.%n*clac*			3,4,17		43
+54	camille_hello		Je ne te comprends pas.			44,48,52,53		
+55	nicolas_hello		Bonjour, que me vaut l'honneur de ton appel ?			56,57,58		
+56	nicolas_hello	J'ai besoin d'aide !	Je suis là pour t'aider.%nDe quoi tu as besoin ?			60,61,62,70		
+57	nicolas_hello	Dire quelque chose...	Vous lui dites :		true		59	
+58	nicolas_hello	Raccrocher	Faut que je raccroche, merci !%n*clac*			3,4,17		55
+59	nicolas_hello		Peux-tu être plus précis ?			56,57,58		
+60	nicolas_hello	J'ai besoin du numéro d'un démineur.	Pas de soucis, laisse-moi te trouver ça.	true		71		
+61	nicolas_hello	J'ai besoin du numéro du président.	Désolé, je voudrais bien t'aider mais même moi je n'ai pas une information pareille.	true		60,61,62,70		
+62	nicolas_hello	J'ai besoin d'une information compromettante !	OK, mais sur qui ?			63,64,65,66,67,68,69,70		
+63	nicolas_hello	Sur Darling.	Désolé, je ne connais pas.	true		63,64,65,66,67,68,69,70		
+64	nicolas_hello	Sur Kevin.	Ton meilleur pote ?%nHonnêtement j'ai tellement d'infos compromettantes sur lui qu'on en aurait pour la journée.	true		63,64,65,66,67,68,69,70		
+65	nicolas_hello	Sur Camille.	C'est un pro, je n'ai rien contre lui.	true		63,64,65,66,67,68,69,70		
+66	nicolas_hello	Sur le président.	Avant d'être président il a perdu beaucoup d'argent aux jeux.%nUn grand groupe pharmaceutique a couvert les frais, mais tu te doute que les remboursements liés au pharmacetique risquent d'augmenter ces prochaines années.	true		63,64,65,66,67,68,69,70		
+67	nicolas_hello	Sur le ministre Bertrand.	Il est alcoolique et a été impliqué dans un accident. Il a donné par mal d'argent à un dénommé Samuel pour que l'information reste confidentielle.	true		63,64,65,66,67,68,69,70		
+68	nicolas_hello	Sur le ministre Hubert.	Il aime bien les soirées BDSM, il a réussi à étouffer une affaire avec une dénommée Giselle.%nUne photo des deux en soirée cuir-moustache a été confisquée à un paparazzi.	true		63,64,65,66,67,68,69,70		
+69	nicolas_hello	Sur la ministre Michelle.	Il semblerait que la ministre des transport n'aime pas que les rails ferroviaires.%nElle a un problème avec la coke, et a du faire accusser sa propre fille, dénommée Émilie, pour éviter d'aller en prison.	true		63,64,65,66,67,68,69,70		
+70	nicolas_hello	Non rien, désolé.	Pas de soucis.			56,57,58		
+71	nicolas_hello	Merci tu me sauve la vie !	Y'a pas de quoi. Alors le numéro est le 555-436675.			60,61,62,70		
