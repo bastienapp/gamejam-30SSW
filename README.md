@@ -1,4 +1,4 @@
-# 30 Second To Save The World
+# 30 Seconds To Save The World
 
 In order to launch the game, you need Java installed and to write the following command :
 
