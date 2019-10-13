@@ -63,8 +63,8 @@ public class Main {
 
         if (choice.isInput()) {
             String answer = input.nextLine();
-            if (nextKeys.contains(answer)) {
-                int key = nextKeys.indexOf(answer);
+            if (nextKeys.contains(answer.toLowerCase())) {
+                int key = nextKeys.indexOf(answer.toLowerCase());
                 play(choices.get(nextChoices.get(key) - 1));
             } else {
                 manageFailure(choice);

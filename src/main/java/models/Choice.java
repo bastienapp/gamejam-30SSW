@@ -41,7 +41,7 @@ public class Choice {
             for (String v : str[6].split(",")) {
                 String[] k = v.split("=");
                 if (k.length > 1) {
-                    cKeys.add(k[0]);
+                    cKeys.add(k[0].toLowerCase());
                     cValues.add(Integer.parseInt(k[1]));
                 } else if (!k[0].isEmpty()) {
                     cValues.add(Integer.parseInt(k[0]));

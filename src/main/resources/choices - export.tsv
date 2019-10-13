@@ -1,8 +1,8 @@
 id	key	title	text	once	input_text	choices	failure	extinct
 1	opening		Bordel, comment j'en suis arrivé là...%nIl a fallu que je suive cette piste et que j'ouvre cette mallette nucléaire.%nForcément elle était déjà amorcée,si j'en crois l'horloge, il me reste 30 seconde pour trouver une solution...%nSinon je pars en fumé... Et avec moi, la ville entière.%nJ'imagine que le pays dans lequel je suis n'appréciera pas qu'un étranger ait fait exploser sa capitale.%nÀ mon avis, si je ne désamorce pas cette bombe, c'est une troisième guerre mondiale qui va démarrer.			2,5		
 2	phone_look	Regarder mon téléphone	Il doit bien y avoir quelqu'un qui peut m'aider !			3,4,17		
-3	phone_contact	Ouvrir mes contacts	- Darling%n%nEntrez un nom de contact :		true	darling=10	9	
-4	phone_call	Appeler un numéro	Entrez un nom de contact ou un numéro de téléphone :		true		9	
+3	phone_contact	Ouvrir mes contacts	- Camille%n- Darling%n- Kevin%n- Nicolas%n%nEntrez un nom de contact :		true	camille=99,darling=10,kevin=28,nicolas=99	9	
+4	phone_call	Appeler un numéro	Entrez un nom de contact ou un numéro de téléphone :		true	555-365514=99	9	
 5	bomb_defuse	Désamorcer la bombe	Vous entrez le mot de passe :		true		6	
 6	game_over		La bombe explose.				7,8	
 7	restart_first	...	Que s'est-il passé ?%nPourquoi je suis encore là !%nLa bombe est toujours là elle aussi et l'horloge indique de nouveau 30 secondes.%nPas le temps de comprendre, il faut que je me dépêche de trouver une solution pour ne pas crever !			2,5		
@@ -17,7 +17,27 @@ id	key	title	text	once	input_text	choices	failure	extinct
 16	love_thuth4	Excuse-moi, je voulais juste te parler un peu.	Super, maintenant c'est fait. Bon vite, je dois vraiment partir en réunion là !			11,12,13,19,22	21	
 17	phone_exit	Ranger le téléphone	Vous levez la tête de votre téléphone.%nLa bombe est toujours là...			2,5		
 18	phone_noanswer		Le téléphone sonne, mais personne ne répond.			3,4,17		
-19	love_talk	Dire quelque chose...	Vous lui dites :		true		20	
+19	love_talk	Dire quelque chose...	Vous lui dites :		true	82AD276=24	20	
 20	love_talkerror_first		Mon amour, mais qu'est-ce que tu racontes ?			11,12,13,19,22	21	
 21	love_exit		Mince, on m'appelle. Bon je dois raccrocher, bisous mon amour !%n*clac*			3,4,17		10
 22	love_hangout	Raccrocher	Darling, je dois te laisser, bisous.%n*clac*			3,4,17	23	10
+23	love_thuth5	Je ne sais pas quoi faire, qui saurait désamorcer une bombe ?	Écoute je ne sais pas si c'est une blague, mais si tu ne déconnes pas, appelle Samuel.%nC'est un ami qui connait un gars que bosse au déminage. Il devrait pouvoir t'aider, son numéro est le 555-365514.			11,12,13,19,22		
+24	love_thuth6		Mon amour comment as-tu eu ce numéro ?%nComment sais-tu que je travaille pour la CIA ?			25		
+25	love_thuth7	Ce n'est pas le problème, j'ai besoin du numero du président tout de suite !	Tu me prends pour qui, tu crois vraiment que j'ai le numéro du président ?! Ce n'est pas le genre d'infos qu'on donne, même à un agent du CIA. Après... Non c'est trop risqué...			26		
+26	love_thuth8	Qu'est-ce qui est trop risqué, j'ai une bombe nucléaire devant moi et j'ai besoin du président pour la désamorcer !	Je risque mon poste là ! Bon je peux te passer le numéro du ministre Hubert ! Bon ça m'étonnerait que ce con te dise quoi que ce soit et encore moins le numéro du président, mais c'est la seule chose que je peux faire pour toi. Son numéro est le 555-452610.			27		
+27	love_thuth9	Merci Darling, je t'aime.	Mon amour, si tu ne désamorce pas cette bombe, je t'arrache la tête.%n Bon maintenant dépêche-toi !%n*clac*			3,4,17		10
+28	kevin_hello		Salut ça fait longtemps que tu ne m'avais pas appellé, la forme ?	true		29,30,35,36	18	
+29	kevin_whatsup1	Ça va et toi ?	Bah pas terrible en fait.%nCe matin je me suis reveillé et j'avais mal au bide.%nDu coup je suis allé aux chiottes et là...%n	true		38		
+30	kevin_thruth1	Je suis en face d'une bombe là.	Ha ouais, mais je croyais que tu étais casé. Tu as encore le temps de trainer avec des bombes ?	true		31		
+31	kevin_thruth2	Pas de style de bombe. Une vrai bombe... nucléaire.	Arrête de dire des conneries haha.			32		
+32	kevin_thruth3	Non mais vraiment...	C'est bon, arrête de me faire marcher.%nTu ne m'auras pas avec cette blague débile !			33,34		
+33	kevin_thruth4	Mais...	Pas de mais !			29,30,35,36		
+34	kevin_thruth5	Tu as raison, je déconnais !	Hé oui, je suis trop malin pour me faire avoir.			29,30,35,36		
+35	kevin_say	Dire quelque chose...	Vous lui dites :		true	tacos=42	37	
+36	kevin_hangout	Raccrocher	Bon Kev' je dois te laisser!%,*clac*			3,4,17		29
+37	kevin_wtf		Hein ?! Tu as bu quelque chose ou bien ?			29,30,35,36		
+38	kevin_whatsup2	Non arrête ça devient dégueux là...	Non t'inquiète ! Donc je disais : je suis allé aux chiottes et j'ai tapé mon petit orteil dans le coin de la porte.			39		
+39	kevin_whatsup3	Aïe...	Et c'est pas tout ! Du coup je saute à cloche pied et là je glisse sur le tapis des chiottes.			40		
+40	kevin_whatsup4	Sans déconner !	Oui. Et c'est à ce moment-là que je me suis chié dessus.			41		
+41	kevin_whatsup5	Dégueux !	Je ne te le fais pas dire, j'ai passé 30 minutes à nettoyer, vu que j'avais la chiasse.%nVoilà, à part ça, ça va sinon.			29,30,35,36		
+42	kevin_tacos		Ha oui pas con, on ira en manger un avec Bastien un de ces quatre.	true		29,30,35,36	37	
