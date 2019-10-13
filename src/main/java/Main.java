@@ -43,6 +43,7 @@ public class Main {
             timer--;
         } else if (choice.getId() != 1) {
             timer = TIMER_MAX;
+            reset();
         } else {
             timer--;
         }
@@ -121,5 +122,12 @@ public class Main {
         }
         choice.setFailed(true);
         play(choices.get(failures[0] - 1));
+    }
+
+    private static void reset() {
+        for (Choice choice : choices) {
+            choice.setDone(false);
+            choice.setFailed(false);
+        }
     }
 }
