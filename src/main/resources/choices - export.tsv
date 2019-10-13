@@ -21,7 +21,7 @@ id	key	title	text	once	input_text	choices	failure	extinct
 20	love_talkerror_first		Mon amour, mais qu'est-ce que tu racontes ?			11,12,13,19,22	21	
 21	love_exit		Mince, on m'appelle. Bon je dois raccrocher, bisous mon amour !%n*clac*			3,4,17		10
 22	love_hangout	Raccrocher	Darling, je dois te laisser, bisous.%n*clac*			3,4,17		10
-23	love_thuth5	Je ne sais pas quoi faire, qui saurait désamorcer une bombe ?	Écoute je ne sais pas si c'est une blague, mais si tu ne déconnes pas, appelle Samuel.%nC'est un ami qui connait un gars que bosse au déminage. Il devrait pouvoir t'aider, son numéro est le 555-365514.			11,12,13,19,22		
+23	love_thuth5	Je ne sais pas quoi faire, qui saurait désamorcer une bombe ?	Écoute je ne sais pas si c'est une blague, mais si tu ne déconnes pas, appelle Nicolas, il devrait t'aider.			11,12,13,19,22		
 24	love_thuth6		Mon amour comment as-tu eu ce numéro ?%nComment sais-tu que je travaille pour la CIA ?			25		
 25	love_thuth7	Ce n'est pas le problème, j'ai besoin du numero du président tout de suite !	Tu me prends pour qui, tu crois vraiment que j'ai le numéro du président ?! Ce n'est pas le genre d'infos qu'on donne, même à un agent du CIA. Après... Non c'est trop risqué...			26		
 26	love_thuth8	Qu'est-ce qui est trop risqué, j'ai une bombe nucléaire devant moi et j'ai besoin du président pour la désamorcer !	Je risque mon poste là ! Bon je peux te passer le numéro du ministre Hubert ! Bon ça m'étonnerait que ce con te dise quoi que ce soit et encore moins le numéro du président, mais c'est la seule chose que je peux faire pour toi. Son numéro est le 555-452610.			27		

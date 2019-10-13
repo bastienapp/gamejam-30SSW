@@ -95,7 +95,7 @@ public class Main {
                             stop = true;
                             play(choices.get(nextChoices.get(c - 1) - 1));
                             return;
-                        } else {
+                        } else if (choice.getId() != 1) {
                             System.out.printf("%nChoix incorrect...%n%n");
                         }
                     } catch (Exception e) {
