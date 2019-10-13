@@ -34,7 +34,7 @@ id	key	title	text	once	input_text	choices	failure	extinct
 33	kevin_thruth4	Mais...	Pas de mais !			29,30,35,36		
 34	kevin_thruth5	Tu as raison, je déconnais !	Hé oui, je suis trop malin pour me faire avoir.			29,30,35,36		
 35	kevin_say	Dire quelque chose...	Vous lui dites :		true	tacos=42	37	
-36	kevin_hangout	Raccrocher	Bon Kev' je dois te laisser!%,*clac*			3,4,17		29
+36	kevin_hangout	Raccrocher	Bon Kev' je dois te laisser !%n*clac*			3,4,17		28
 37	kevin_wtf		Hein ?! Tu as bu quelque chose ou bien ?			29,30,35,36		
 38	kevin_whatsup2	Non arrête ça devient dégueux là...	Non t'inquiète ! Donc je disais : je suis allé aux chiottes et j'ai tapé mon petit orteil dans le coin de la porte.			39		
 39	kevin_whatsup3	Aïe...	Et c'est pas tout ! Du coup je saute à cloche pied et là je glisse sur le tapis des chiottes.			40		
@@ -82,4 +82,4 @@ id	key	title	text	once	input_text	choices	failure	extinct
 81	president_hello		Ici le président, que désirez-vous ?			82		
 82	president_hello	Bonjour Président, j'ai besoin du numéro de désamorçage de la bombe du nucléaire XRS-1656.	Pas de soucis !%nJe ne connais que la fin du code de désamorçage cependant : SEFG.			83		
 83	president_hello	Merci président, bonne journée !	Pas de quoi Jack Bauer.%n*clac*			3,4,17		81
-84	game_over		Vous entrez le code et désamorcé la bombe.%nBravo, vous avez réussi !					
+84	game_over		Vous entrez le code et désamorcé la bombe.%nBravo, vous avez sauvez votre vie... et le monde aussi !%n%n					

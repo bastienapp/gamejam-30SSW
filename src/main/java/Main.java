@@ -21,6 +21,10 @@ public class Main {
     }
 
     private static void play(Choice choice) {
+        if (choice.getId() == 84) {
+            System.out.printf(choice.getText());
+            return;
+        }
         if (choice.isDone() && choice.isOnce()) {
             manageFailure(choice);
             return;
@@ -95,14 +99,11 @@ public class Main {
                             stop = true;
                             play(choices.get(nextChoices.get(c - 1) - 1));
                             return;
-                        } else if (choice.getId() != 1) {
+                        } else {
                             System.out.printf("%nChoix incorrect...%n%n");
                         }
                     } catch (Exception e) {
-                        //e.printStackTrace();
-                        if (choice.getId() != 1) {
-                            System.out.printf("%nChoix incorrect...%n%n");
-                        }
+                        System.out.printf("%nChoix incorrect...%n%n");
                     }
                 } else {
                     manageFailure(choice);
